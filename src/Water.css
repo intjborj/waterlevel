@@ -1,0 +1,24 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+
+.header {
+   
+    background-color: rgb(1, 18, 75);
+  
+}
+
+.Tank1 {
+  display: grid;
+ 
+}
+
+.Tank2 {
+  display: grid;
+  justify-content: center;
+}
+
+
+
