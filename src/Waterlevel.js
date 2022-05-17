@@ -7,12 +7,14 @@ import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 class Waterlevel extends Component {
   state = {
-    value: 50,
+    value: 50
   };
+  
   startColor = "#2389da";
   endColor = "#2389da";
 
   render() {
+   
     const radius = 150;
     const interpolate = interpolateRgb(this.startColor, this.endColor);
     const fillColor = interpolate(this.state.value / 100);
@@ -50,6 +52,7 @@ class Waterlevel extends Component {
           textOffsetX={0}
           textOffsetY={0}
           textRenderer={(props) => {
+            
             const value = Math.round(props.value);
             const radius = Math.min(props.height / 2, props.width / 2);
             const textPixels = (props.textSize * radius) / 2;
